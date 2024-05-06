@@ -26,7 +26,7 @@ const Products =()=>{
     useEffect(()=>{
         const fetchSummaryData = async () => {
             try {
-              const response = await fetch(`http://localhost:9090/sales-details?month=${month}`);
+              const response = await fetch(`https://roxiler-server-tua6.onrender.com/sales-details?month=${month}`);
               const data = await response.json();
               setSummaryData(data[0]);
               setLoading(false);
@@ -130,7 +130,9 @@ const Products =()=>{
         </div>
         {loading?renderLoader()
          :(
-        <table className="transactionTable">
+        <div>
+
+        <table>
         <thead>
           <tr>
             <th>Title</th>
@@ -151,7 +153,9 @@ const Products =()=>{
             </tr>
           ))}
         </tbody>
-      </table> )}
+      </table>
+      </div>
+     )}
       <div className="pagination">
         <button className="paginationButton" onClick={handlePreviousPage} disabled={currentPage === 1}>
           Previous

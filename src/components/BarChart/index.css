@@ -1,0 +1,28 @@
+.pieChart{
+    width:600px;
+    height:400px;
+}
+
+@media screen and (max-width:768px){
+.mobileview{
+    display: flex;
+    justify-content: center;
+}
+
+.laptopview{
+    display: none;
+}
+
+}
+
+@media screen and (min-width:768px){
+    .mobileview{
+        display: none;
+    }
+    
+    .laptopview{
+        display: flex;
+        justify-content: center;
+    }
+    
+    }

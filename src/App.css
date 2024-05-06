@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  width: 100%;
 }
 .App-header {
   background-color: #282c34;
@@ -9,5 +10,5 @@
   align-items: center;
   justify-content: center;
   color: white;
-  width: 100vw;
+  width: 100%;
 }
